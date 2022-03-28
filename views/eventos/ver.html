@@ -1,0 +1,31 @@
+<section>
+    <div class="container">
+        <breadcrumb namemodule="Eventos" pagename="{{vm.info.category.name}}" ng-if="!!vm.info"></breadcrumb>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img ng-if="!!vm.info.front.source" class="img-fluid" ng-src="{{url + '/' + vm.info.front.source}}" alt="">
+                    </div>
+                    <div class="col-md-9">
+                        <p class="fecha">{{vm.info.start | date:'d/M/yyyy'}}{{(!!vm.info.end) ? ' al ' + (vm.info.end | date:'d/M/yyyy') : ''}}</p>
+                        <h6 class="categoria">{{vm.info.category.name}}</h6>
+                        <h2>{{vm.info.title}}</h2>
+                        <h3 ng-bind-html="vm.getHtml(vm.info.lead)"></h3>
+                        <p ng-bind-html="vm.getHtml(vm.info.body)"></p>
+
+                        <!-- inserta galería -->
+                        <data-owl-carousel class="owl-carousel owl-theme galeria-basica galeria-seccion" data-options="owlOptionsTestimonials">
+                          <div owl-carousel-item="" ng-repeat="image in vm.info.images" class="item">
+                            <a class="" ng-href="{{url + '/' + image.source}}" data-fancybox>
+                                <img class="img-fluid" ng-src="{{url + '/' + image.source}}" alt="">
+                            </a>
+                          </div>
+                        </data-owl-carousel>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,22 @@
+<div class="row" ng-if="!!info">
+    <div class="col-md-12">
+        <h6>Revista Sociedad Odontológica La Plata, {{currentYear}}</h6>
+        <h2>{{info.title}}{{(!!info.number) ? ' (' + info.number + ')' : ''}}</h2>
+    </div>
+</div>
+<div class="row" ng-if="!!info">
+    <div class="col-md-12 col-lg-5">
+        <a href="{{url}}/{{info.pdf.source}}" target="_blank" download><img class="img-fluid mb-4" ng-src="{{url}}/{{info.image.source}}" alt="{{info.title}}"></a>
+        <a ng-if="!!info.pdf.source" class="d-block mb-4" href="{{url}}/{{info.pdf.source}}" download="{{info.title}}"><i class="fa fa-download" aria-hidden="true"></i> Descargar Revista PDF</a>
+    </div>
+    <div class="col-md-12 col-lg-7" ng-if="!!info.magazinearticles && info.magazinearticles.length > 0">
+        <h4 class="mt-0">Índice de Artículos</h4>
+
+        <ul class="indice-art-revista">
+            <li ng-repeat="article in info.magazinearticles">
+                <a ng-href="revista-cientifica/{{info._id}}/{{article._id}}">{{article.title}}<br>{{article.author}}</a>
+                <a ng-if="!!article.pdf.source" class="d-block" href="{{url}}/{{article.pdf.source}}" download="Artículo {{article.title}} de la Revista {{info.title}}.pdf"><i class="fa fa-download" aria-hidden="true"></i> Descargar Artículo PDF</a>
+            </li>
+        </ul>
+    </div>
+</div>

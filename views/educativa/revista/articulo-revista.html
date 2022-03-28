@@ -1,0 +1,15 @@
+<div class="row box-noticia">
+    <div class="col-md-12">
+        <div class="row">
+            <div ng-if="!!info.image.source" class="col-md-3">
+                <img class="img-fluid" src="{{url + '/' + info.image.source}}" alt="">
+            </div>
+            <div class="{{(!!info.image.source) ? 'col-md-9' : 'col-md-12'}}">
+                <h2>{{info.title}}</h2>
+                <h3>{{info.author}}</h3>
+                <p ng-bind-html="getHtml(info.body)"></p>
+                <a ng-if="!!info.pdf.source" class="d-block" href="{{url}}/{{info.pdf.source}}" download="Artículo {{info.title}} de la Revista {{info.title}}.pdf"><i class="fa fa-download" aria-hidden="true"></i> Descargar Artículo PDF</a>
+            </div>
+        </div>
+    </div>
+</div>

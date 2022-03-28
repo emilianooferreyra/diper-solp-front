@@ -1,0 +1,228 @@
+<div ng-include="'views/slide-home.html'"></div>
+
+<noticias-slider></noticias-slider>
+
+<!-- Section Serv. Online, Socios, Calendario -->
+<section id="servicios-calendario">
+    <div class="container">
+        <div class="row row-flex">
+            <div class="col-sm-12 col-md-6">
+                <div class="row">
+                    <div class="col-md-12 tituloSeccion">
+                        <h2>Servicios para Socios</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="contentBanner banner-serv-online p-4 mb-4 bg-gradient">
+                            <h6>Socios</h6>
+                            <h4>Servicios Online</h4>
+                            <p>Gestioná tus trámites desde donde estés.</p>
+                            <a href="http://privada.solp.org.ar" target="_blank" class="btn btn-primary">Ingresar</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contentBanner banner-autorizaciones bg-gradient p-4 bg-gradient">
+                                    <h6>Socios</h6>
+                                    <h4>Autorizaciones</h4>
+                                    <p>Conocé como podés autorizar tus órdenes.</p>
+                                    <a ng-href="autorizaciones" class="btn btn-primary">Ingresar</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contentBanner-outline banner-clasificados p-4">
+                                    <h6>Oportunidades</h6>
+                                    <h4>Clasificados</h4>
+                                    <p>Comprá y vendé dentro de nuestra comunidad.</p>
+                                    <a ng-href="clasificados" class="btn btn-primary">Ingresar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <eventos-calendar></eventos-calendar>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Facultad, Postgrado, Ides -->
+<section id="educativas">
+    <div class="container">
+        <div class="row flex-row">
+            <div class="col-sm-6 col-md-5">
+                <div class="contentBanner banner-facultad p-3">
+                    <a href="">
+                        <div class="content-txt-banner bg-facultad">
+                            <h6>Facultad</h6>
+                            <h3>Facultad de Odontología UCALP / SOLP</h3>
+                            <a class="ir" ng-href="facultad"><i class="fa fa-angle-right"></i><span>Ingresar</span></a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-5">
+                <div class="contentBanner banner-postgrado p-3">
+                    <a href="">
+                        <div class="content-txt-banner bg-postgrado">
+                            <h6>Postgrado</h6>
+                            <h3>Escuela para Graduados</h3>
+                            <a class="ir" ng-href="escuela-graduados"><i class="fa fa-angle-right"></i><span>Ingresar</span></a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-2">
+                <div class="contentBanner banner-ides p-3">
+                    <h6>Solp</h6>
+                    <img class="img-fluid" ng-src="images/ides.png" alt="IDES. Instituto de Enseñanza Superior">
+                    <a class="ir" ng-href="ides"><i class="fa fa-angle-right"></i><span>Ingresar</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Servicios Comunidad -->
+<section id="comunidad ">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <div class="row">
+                    <div class="col-sm-12 tituloSeccion">
+                        <h2>Solp y la comunidad</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img class="img-fluid mb-3" ng-src="images/banner-solp-comunidad.jpg" alt="Solp y la Comunidad">
+                        <h5>Semana de la Salud bucal</h5>
+                        <p>El sábado 6 de septiembre se realizó en plaza San Martín el cierre de los 20 años de la Semana de la Salud Bucal de la FOUNLP. Desde el área de extensión a cargo del Dr. Sergio Lazo conjuntamente con la cátedra de Odontología Preventiva Social (OPS), los alumnos de 1ro a 5to año realizaron a lo largo de la semana actividades cuya finalidad fue la de concientizar a la comunidad sobre los cuidados de la boca.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 row-flex">
+                <div class="banner-guardia bg-gradient p-3">
+                    <h3><span>Guardia</span><br> Odontológica</h3>
+                    <p class="mb-4">Atendemos urgencias odontológicas.</p>
+                    <p><strong>Lunes a Viernes</strong></p>
+                    <h4>de 20 a 8 hs.</h4>
+                    <p><strong>Sábados, Domingos y feriados</strong></p>
+                    <h4>las 24 hs.</h4>
+                    <a class="btn btn-primary" ng-href="guardia">Ver Obras Sociales</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 row-flex">
+                <div class="contentBanner banner-biblioteca p-3 mb-4">
+                    <div class="content-logo-biblioteca">
+                        <img class="img-fluid" ng-src="images/biblioteca-solp.png" alt="Biblioteca Solp">
+                    </div>
+                    <a class="ir" ng-href="biblioteca"><i class="fa fa-angle-right"></i><span>Ingresar</span></a>
+                </div>
+
+                <div class="contentBanner banner-segu p-3">
+                    <div class="content-logo-segu">
+                        <img class="img-fluid" ng-src="images/segu.png" alt="Segu Solp">
+                    </div>
+                    <a class="ir" ng-href="guardia-odontologica/segu"><i class="fa fa-angle-right"></i><span>Ingresar</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section  Asociación Mutual-->
+<section id="asocMutual">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-right">
+                <h2>Conocé la mutual</h3>
+                <p>Sumate y aprovechá múltiples servicios y beneficios.</p>
+                <a class="btn btn-primary" ng-href="mutual">Más información</a>
+            </div>
+            <div class="col-md-6">
+                <img ng-src="images/mutual-siglo-veintiuno.png" alt="Asociación Mutual Siglo XXI">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Novedades
+<section id="productos-clasificados">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 tituloSeccion">
+                <h2>Productos en oferta</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 mb-3">
+                        <h6>Productos</h6>
+                        <h5>Conocé los seleccionados del mes de Nicofer</h5>
+                        <a class="btn btn-primary btn-sm" ng-href="productos">Ver más productos</a>
+                    </div>
+                    <div class="col-sm-12 col-md-9">
+                        <productos-slider></productos-slider>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+<!-- Section Novedades NICOFER-->
+<section id="productos-clasificados">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-6 col-md-8 bg-gradient-nicofer banner-publicidad">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <img class="img-fluid" src="images/logo-nicofer-completo.png" alt="Nicofer">
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p>Av. 13 N° 680, La Plata Buenos Aires<br>
+                                    Tel. 0221 4898303<br>
+                                    Whatsapp: 011-1551354781<br>
+                                    Correo: <a href="mailto:nicofer.laplata@gmail.com">nicofer.laplata@gmail.com</a><br>
+                                    Instagram: @nicoferlp<br>
+                                    Facebook: nicoferlaplata</p>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary btn-sm" ng-href="productos">Ver productos</a>
+                        <div class="text-right"><small>Espacio de Publicidad</small></div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 bg-gradient-nicofer text-center banner-publicidad">
+                        <img class="img-fluid" src="images/logo-nicofer.png" alt="Nicofer">
+                        <h3>NICOFER OFERTAS</h3>
+                        <p>Y <strong>precios especiales</strong>,<br>
+                        hasta agotar stock.</p>
+                        <a class="btn btn-primary btn-sm fancybox" ng-href="images/nicofer/ofertas.jpg" data-fancybox >Ver Ofertas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    $(".fancybox").fancybox({
+
+    // 'transitionIn': 'elastic',
+    //
+    // 'transitionOut': 'elastic',
+
+    'speedIn': 600,
+
+    'speedOut': 200,
+
+    // 'overlayShow': false
+
+    });
+    </script>
+</section>

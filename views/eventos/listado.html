@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="row">
+            <!-- Curso -->
+            <div class="col-sm-6  col-md-6 col-lg-4" ng-repeat="evento in vm.data">
+                <!-- abre card evento -->
+                <div class="card card-evento">
+                    <div class="card-fecha-evento">{{evento.start | date: 'd/M/yyyy'}}{{!!evento.end ? ' al ' + (evento.end | date: 'd/M/yyyy') : ''}}</div>
+                    <img class="card-img-top" ng-src="{{url + '/' + evento.front.source}}" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">{{evento.title}}</h5>
+                        <p class="card-text">{{evento.lead}}</p>
+                        <a ng-href="eventos/{{evento.category.slug}}/{{evento.slug}}" class="btn btn-outline">Más Información</a>
+                    </div>
+                </div><!-- Cierra card-evento -->
+            </div><!-- Cierra curso -->
+
+        </div>
+    </div>
+</div>

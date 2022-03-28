@@ -1,0 +1,66 @@
+<!-- Section Slider -->
+<section class="cabecera-seccion-gral cabecera-postgrado">
+    <div class="row">
+        <div class="banda-graduados">
+        </div>
+        <div class="container">
+            <div class="titulo">
+                <h2>Escuela para Graduados</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin Section Slider -->
+
+<!-- Section Noticia -->
+<section id="">
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-md-12 tituloSeccion">
+                <h2>Facultad</h2>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Educativa</a></li>
+                        <li class="breadcrumb-item"><a ng-href="escuela-graduados">Escuela para Graduados</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Eventos</li>
+                    </ol>
+
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-sm-3 col-md-3 col-lg-2">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" ng-href="escuela-graduados">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Autoridades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reglamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                        <!-- <img class="img-fluid" src="images/novedad-1.jpg" alt=""> -->
+                    </div>
+                    <div class="col-sm-9 col-md-9 col-lg-10">
+                        <h6>Escuela de Graduados</h6>
+                        <h2>Conocé nuestros eventos</h2>
+
+                        <listado-eventos info="{{vm.data}}" ng-if="!!vm.data && vm.data.length > 0"></listado-eventos>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

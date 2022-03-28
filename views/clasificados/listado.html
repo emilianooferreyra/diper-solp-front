@@ -1,0 +1,144 @@
+<!-- Section Contenido -->
+<section>
+    <div class="container">
+        <breadcrumb pagename="Clasificados"></breadcrumb>
+
+        <div class="row">
+            <div class="col-md-12 tituloSeccion">
+                <h2>Clasificados</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box-infoClasificados bg-gradient">
+                    <div class="row d-flex align-items-end justify-content-between">
+                        <div class="col-md-6">
+                            <h2>¿Le interesa<br> <strong>publicar un clasificado</strong>? *</h2>
+                            <p>Por favor complete el siguiente formulario:</p>
+
+                            <div class="accordion carga-formClasificado" id="accordionExample">
+                                <div class="content-acordeon">
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#form-Clasificado" aria-expanded="true" aria-controls="collapseOne">
+                                          Quiero publicar un <strong>clasificado</strong> <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+
+                                        </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="form-Clasificado" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <form ng-submit="vm.save()">
+                                                <div class="form-group">
+                                                    <label for="input-titClasificado">Título del clasificado<span> *</span></label>
+                                                    <input type="text" class="form-control form-control-sm" id="input-titClasificado" aria-describedby="emailHelp" ng-model="vm.info.title" required="true">
+                                                    <small id="emailHelp" class="form-text text-muted">Hasta 50 caracteres <span> *</span></small>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="input-precioClasificado">Precio<span> *</span></label>
+                                                    <input type="text" class="form-control form-control-sm" id="input-precioClasificado" ng-model="vm.info.price" required="true">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="input-precioClasificado">Breve descripción<span> *</span></label>
+                                                    <textarea class="form-control form-control-sm" id="input-precioClasificado" ng-model="vm.info.description"></textarea>
+                                                </div>
+
+                                                <!-- <div class="form-group">
+                                                    <label for="input-rubroClasificado">Rubro<span> *</span></label>
+                                                    <input type="text" class="form-control" id="input-rubroClasificado">
+                                                </div> -->
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <label for="input-fechaClasificado">Nombre<span> *</span></label>
+                                                        <input type="text" class="form-control form-control-sm" id="input-fechaClasificado" ng-model="vm.info.name" required="true">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="input-vendedorClasificado">Apellido<span> *</span></label>
+                                                        <input type="text" class="form-control form-control-sm" id="input-vendedorClasificado" ng-model="vm.info.lastname" required="true">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <label for="input-matriculaClasificado">Matrícula<span> *</span></label>
+                                                        <input type="text" class="form-control form-control-sm" id="input-matriculaClasificado" ng-model="vm.info.matricula" required="true">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="input-telefonoClasificado">Teléfono</label>
+                                                        <input type="text" class="form-control form-control-sm" id="input-telefonoClasificado" ng-model="vm.info.phone">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="input-emailClasificado">Email<span> *</span></label>
+                                                    <input type="email" class="form-control form-control-sm" id="input-emailClasificado" ng-model="vm.info.email" required="true">
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <div style="font-weight: 400; cursor:pointer;"
+                                                    class="drop-box control-label" ngf-select ngf-drop ng-model="vm.info.gallery"
+                                                    ngf-multiple="true"
+                                                    ngf-drag-over-class="'dragover'"
+                                                    ngf-accept="'image/*'"
+                                                    ngf-pattern="'image/*'"
+                                                    ngf-keep="true"
+                                                    ngf-max-files="3"><i class="fa fa-picture-o mr-2" aria-hidden="true"></i>Agregar imágenes al clasificado (opcional)</div>
+                                                    <small class="mb-4">Hasta 5 imágenes. Peso máximo por imagen .... </small>
+
+                                                    <div class="row" ng-if='!!vm.info.gallery' style="margin-top: 1em;">
+                                                        <div class="col-sm-4" ng-repeat="image in vm.info.gallery">
+                                                            <span class="pull-left" ng-click='vm.clearGallery($index);'><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                                                            <img style="width: 100%;height: auto;margin: 15px;" ngf-thumbnail="image || '/thumb.jpg'">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div vc-recaptcha ng-model="vm.od_captcha" on-create="setRecaptchaId(widgetId)"></div>
+                                                <button type="submit" class="btn btn-primary float-right">Enviar</button>
+                                                <div class="clearfix"></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mb-0 small">* Servicio exclusivo para socios</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="mb-0">Si desea <strong>dar de baja</strong> o <strong>modificar</strong> un clasificado por favor, enviénos un mail a:</p>
+                            <a href="mailto:info@solp.org.ar"><i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>info@solp.org.ar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Arranca Content Tabla Clasificados -->
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-10">
+                        <h3>Clasificados Activos</h3>
+                        <table class="table tabla-clasificados table-bordered table-striped table-hover table-responsive">
+                            <thead>
+                                <tr>
+                                  <!-- <th scope="col">Número</th> -->
+                                  <th scope="col">Producto / Servicio</th>
+                                  <th scope="col">Precio</th>
+                                  <!-- <th scope="col">Rubro</th> -->
+                                  <th scope="col">Fecha Public.</th>
+                                  <th scope="col">Vendedor</th>
+                                  <th scope="col">Ver detalle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="classified in vm.data">
+                                  <!-- <td>282</td> -->
+                                  <td>{{classified.title}}</td>
+                                  <td>{{(classified.price | isNumber) ? '$' : ''}} {{classified.price}}</td>
+                                  <!-- <td></td> -->
+                                  <td>{{classified.publishedAt | date:'d/M/yyyy'}}</td>
+                                  <td>{{classified.lastname}}, {{classified.name}}</td>
+                                  <td><a ng-href="clasificados/{{classified._id}}"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

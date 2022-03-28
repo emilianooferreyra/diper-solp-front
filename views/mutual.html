@@ -1,0 +1,63 @@
+<!-- Section Slider -->
+<section class="cabecera-seccion-gral cabecera-institucional">
+    <div class="row">
+        <div class="banda banda-institucional">
+        </div>
+        <div class="container">
+            <div class="titulo">
+                <h2>Mutual</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin Section Slider -->
+
+<!-- Section Noticia -->
+<section class="interior">
+    <div class="container">
+        <div class="row" id="breadcrumb">
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href="#">Mutual</a></li>
+                    </ol>
+
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="nav flex-column menu-lateral">
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="mutual" ng-class="{active: tab == 'inicio'}">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="mutual/nosotros" ng-class="{active: tab == 'nosotros'}">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="mutual/beneficios" ng-class="{active: tab == 'beneficios'}">Beneficios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="mutual/convenios" ng-class="{active: tab == 'convenios'}">Convenios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="mutual/contacto" ng-class="{active: tab == 'contacto'}">Contacto</a>
+                            </li>
+                        </ul>
+                        <!-- <img class="img-fluid" src="images/novedad-1.jpg" alt=""> -->
+                    </div>
+                    <div class="col-md-9">
+                        <div ng-if="tab == 'inicio'" ng-include="'views/mutual/inicio.html'"></div>
+                        <div ng-if="tab == 'nosotros'" ng-include="'views/mutual/nosotros.html'"></div>
+                        <div ng-if="tab == 'beneficios'" ng-include="'views/mutual/beneficios.html'"></div>
+                        <div ng-if="tab == 'convenios'" ng-include="'views/mutual/convenios.html'"></div>
+                        <div ng-if="tab == 'contacto'" ng-include="'views/mutual/contacto.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

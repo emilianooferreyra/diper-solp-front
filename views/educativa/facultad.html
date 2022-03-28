@@ -1,0 +1,77 @@
+<!-- Section Slider -->
+<section class="cabecera-seccion-gral cabecera-facultad">
+    <div class="row">
+        <div class="banda banda-facultad">
+        </div>
+        <div class="container">
+            <div class="titulo">
+                <h2>Facultad</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin Section Slider -->
+
+<!-- Section Noticia -->
+<section class="interior">
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-md-12 tituloSeccion">
+                <h2>Facultad</h2>
+            </div>
+        </div> -->
+        <div class="row" id="breadcrumb">
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Educativa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Facultad</li>
+                    </ol>
+
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- <img class="img-fluid mb-4" src="images/facultad-odontologia-ucalp.png" alt="Facultad de Odontología UCALP"> -->
+                        <ul class="nav flex-column menu-lateral">
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="facultad" ng-class="{active: tab == 'inicio'}">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="facultad/novedades" ng-class="{active: tab == 'novedades'}">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="facultad/autoridades" ng-class="{active: tab == 'autoridades'}">Autoridades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="facultad/docentes" ng-class="{active: tab == 'docentes'}">Docentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="facultad/carrera-odontologia" ng-class="{active: tab == 'carrera-odontologia'}">Carrera de Odontología</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="facultad/requisitos-ingreso" ng-class="{active: tab == 'requisitos-ingreso'}">Requisitos de Ingreso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="facultad/contacto" ng-class="{active: tab == 'contacto'}">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9">
+                      <div ng-if="tab == 'inicio'" ng-include="'views/educativa/facultad/inicio.html'"></div>
+                        <div ng-if="tab == 'novedades'" ng-include="'views/educativa/facultad/novedades.html'"></div>
+                        <div ng-if="tab == 'autoridades'" ng-include="'views/educativa/facultad/autoridades.html'"></div>
+                        <div ng-if="tab == 'docentes'" ng-include="'views/educativa/facultad/docentes.html'"></div>
+                        <div ng-if="tab == 'carrera-odontologia'" ng-include="'views/educativa/facultad/carrera-odontologia.html'"></div>
+                        <div ng-if="tab == 'requisitos-ingreso'" ng-include="'views/educativa/facultad/requisitos-ingreso.html'"></div>
+                        <div ng-if="tab == 'contacto'" ng-include="'views/educativa/facultad/contacto.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

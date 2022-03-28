@@ -1,0 +1,76 @@
+<!-- Section Slider -->
+<section class="cabecera-seccion-gral cabecera-facultad">
+    <div class="row">
+        <div class="banda banda-facultad">
+        </div>
+        <div class="container">
+            <div class="titulo">
+                <h2>Revista Científica</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin Section Slider -->
+
+<!-- Section Noticia -->
+<section class="interior">
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-md-12 tituloSeccion">
+                <h2>Facultad</h2>
+            </div>
+        </div> -->
+        <div class="row" id="breadcrumb">
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Educativa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Revista Científica</li>
+                    </ol>
+
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- <img class="img-fluid mb-4" src="images/facultad-odontologia-ucalp.png" alt="Facultad de Odontología UCALP"> -->
+                        <ul class="nav flex-column menu-lateral">
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="revista-cientifica" ng-class="{active: tab == 'inicio'}">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="revista-cientifica/cuerpo-editorial" ng-class="{active: tab == 'cuerpo-editorial'}">Cuerpo Editorial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="revista-cientifica/comite-cientifico" ng-class="{active: tab == 'comite-cientifico'}">Comité Científico</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" ng-href="revista-cientifica/revista-en-curso" ng-class="{active: tab == 'revista-en-curso'}">Revista en curso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="revista-cientifica/revistas-anteriores" ng-class="{active: tab == 'revistas-anteriores'}">Revistas Anteriores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="descargas/revista/Reglamento-1.docx" download="reglamento_para_autores.docx">Reglamento para autores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="descargas/revista/Formulario.docx" download="formulario_para_autores.docx">Formulario para autores</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9">
+                      <div ng-if="tab == 'inicio'" ng-include="'views/educativa/revista/inicio.html'"></div>
+                        <div ng-if="tab == 'cuerpo-editorial'" ng-include="'views/educativa/revista/cuerpo-editorial.html'"></div>
+                        <div ng-if="tab == 'comite-cientifico'" ng-include="'views/educativa/revista/comite-cientifico.html'"></div>
+                        <div ng-if="tab == 'revista-en-curso'" ng-include="'views/educativa/revista/revista-en-curso.html'"></div>
+                        <div ng-if="tab == 'revistas-anteriores'" ng-include="'views/educativa/revista/revistas-anteriores.html'"></div>
+                        <div ng-if="tab == 'articulo-revista'" ng-include="'views/educativa/revista/articulo-revista.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

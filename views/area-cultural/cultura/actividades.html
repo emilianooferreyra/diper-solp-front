@@ -1,0 +1,50 @@
+<div class="row" id="eventos" ng-if="!!eventos && eventos.length > 0">
+  <div class="col-sm-12">
+      <div class="row">
+          <!-- Curso -->
+          <div class="col-sm-12" ng-repeat="evento in eventos">
+              <!-- abre card evento -->
+              <div class="row lista-cada-evento">
+                  <div class="col-sm-3">
+                    <img class="img-fluid-max" ng-src="{{url + '/' + evento.front.source}}" alt="">
+                  </div>
+                  <div class="col-sm-9">
+                      <div class="fecha-evento">{{evento.start | date: 'd/M/yyyy'}}{{!!evento.end ? ' al ' + (evento.end | date: 'd/M/yyyy') : ''}}</div>
+                      <h3>{{evento.title}}</h3>
+                      <p>{{evento.lead}}</p>
+                  </div>
+              </div><!-- Cierra card-evento -->
+          </div><!-- Cierra curso -->
+      </div>
+  </div>
+</div>
+
+<!-- Abren secciones autoadministrables -->
+<div class="row">
+  <div class="col-md-12 mb-4" ng-repeat="seccion in secciones">
+    <h3 ng-if="!!seccion.title">{{seccion.title}}</h3>
+    <img ng-if="!!seccion.image" class="img-fluid-max m-2" ng-src="{{url + '/' + seccion.image.source}}" alt="">
+    <p ng-if="!!seccion.body" ng-bind-html="getHtml(seccion.body)"></p>
+    <p ng-if="!!seccion.video_url">{{seccion.video_url}}</p>
+    <div class="row" ng-if="!!seccion.images && seccion.images.length > 0">
+      <div class="col-sm-12 col-md-10 offset-md-1 mb-4">
+        <data-owl-carousel class="owl-carousel owl-theme galeria-basica galeria-seccion" data-options="owlOptionsTestimonials">
+          <div owl-carousel-item="" ng-repeat="image in seccion.images" class="item">
+            <a class="" ng-href="{{url + '/' + image.source}}" data-fancybox>
+                <img class="img-fluid" ng-src="{{url + '/' + image.source}}" alt="">
+            </a>
+          </div>
+        </data-owl-carousel>
+      </div>
+    </div>
+    <div class="row" ng-if="!!seccion.url_video">
+      <div class="col-sm-12 col-md-12">
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+          <iframe ng-src="{{getUrl(seccion.url_video)}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- <iframe ng-if="!!seccion.video_url" src="{{seccion.video_url}}"></iframe> -->
+    <hr>
+  </div>
+</div>

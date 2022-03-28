@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-12">
+        <h6>Revista Sociedad Odontológica La Plata, {{currentYear}}</h6>
+        <h2>Números anteriores</h2>
+    </div>
+</div>
+
+<!-- Boletines año 2017 -->
+<div class="row mb-4">
+    <div class="col-md-12">
+        <h3>Año 2018</h3>
+    </div>
+    <div class="col-md-3" ng-repeat="magazine in magazines">
+        <h5>{{magazine.title}}{{(!!magazine.number) ? ' (' + magazine.number + ')' : ''}}</h5>
+        <a ng-href="revista-cientifica/revistas-anteriores/{{magazine._id}}"><!-- va al link de cada revista -->
+            <img class="img-fluid mb-1" ng-src="{{url}}/{{magazine.image.source}}" alt="Revista SOLP 55"></a>
+        </a>
+        <a class="link-rev-ant d-block mb-4" href="{{url}}/{{magazine.pdf.source}}" download><i class="fa fa-download" aria-hidden="true"></i> Descargar Revista PDF</a>
+    </div>
+</div>
+<!-- cierra revistas -->

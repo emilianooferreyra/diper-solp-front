@@ -1,0 +1,43 @@
+<!-- Section Cabecera -->
+<section class="cabecera-seccion-gral cabecera-socios">
+    <div class="row">
+        <div class="banda banda-institucional">
+        </div>
+        <div class="container">
+            <div class="titulo">
+                <h2>Socios</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin Section Cabecera -->
+
+<!-- Section Noticia -->
+<section class="interior">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="nav flex-column menu-lateral">
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="socios-en-la-provincia" ng-class="{active: tab == 'inicio'}">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="socios-en-la-provincia/novedades" ng-class="{active: tab == 'novedades'}">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="socios-en-la-provincia/contacto" ng-class="{active: tab == 'contacto'}">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9">
+                      <div ng-if="tab == 'inicio'" ng-include="'views/socios/socios-en-la-provincia/inicio.html'"></div>
+                        <div ng-if="tab == 'novedades'" ng-include="'views/socios/socios-en-la-provincia/novedades.html'"></div>
+                        <div ng-if="tab == 'contacto'" ng-include="'views/socios/socios-en-la-provincia/contacto.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

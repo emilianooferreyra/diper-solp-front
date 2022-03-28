@@ -1,0 +1,30 @@
+<!-- Section Novedades -->
+<section id="noticias-home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 tituloSeccion">
+                <h2>Noticias</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <data-owl-carousel class="owl-carousel owl-carousel-noticias owl-theme" data-options="ns.owlOptionsTestimonials">
+                <div owl-carousel-item="" ng-repeat="noticia in ns.data" class="item item-car-noticias">
+                  <a class="box-imgNoticia" ng-href="{{url + '/' + noticia.front.source}}" data-fancybox>
+                      <img class="img-fluid" ng-src="{{url + '/' + noticia.front.source}}" alt="">
+                  </a>
+                  <a ng-href="noticias/{{noticia.category.slug}}/{{noticia.slug}}">
+                      <p class="fecha">{{noticia.date | date:'d/M/yyyy'}}</p>
+                      <h6 class="categoria">{{noticia.section}}</h6>
+                      <h3>{{ns.cutText(noticia.title, 76)}}</h3>
+                      <p>{{ns.cutText(noticia.lead, 185)}}</p>
+                  </a>
+                </div>
+              </data-owl-carousel>
+                <div class="cierreNoticias">
+                    <a class="btn btn-outline-secondary btn-masNoticias" ng-href="noticias">Ver todas las noticias</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

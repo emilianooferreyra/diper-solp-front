@@ -1,0 +1,60 @@
+<!-- Section Cabecera -->
+<section class="cabecera-seccion-gral cabecera-institucional">
+    <div class="row">
+        <div class="banda banda-institucional">
+        </div>
+        <div class="container">
+            <div class="titulo">
+                <h2>Institución</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin Section Cabecera -->
+
+<!-- Section Novedades -->
+<section>
+    <div class="container">
+        <breadcrumb namemodule="Noticias" pagename="{{vm.category}}"></breadcrumb>
+        <div class="row">
+            <div class="col-md-12 tituloSeccion">
+                <h2>Noticias</h2>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="lista-borderB lista-noticias">
+                  <li class="" ng-repeat="noticia in vm.data">
+                      <a ng-href="noticias/{{noticia.category.slug}}/{{noticia.slug}}">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="img-fluid mb-3" ng-src="{{url + '/' + noticia.front.source}}" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <p class="fecha">{{noticia.date | date:'d/M/yyyy'}}</p>
+                                <h6 class="categoria">{{noticia.section}}</h6>
+                                <h2>{{noticia.title}}</h2>
+                                <h3>{{noticia.lead}}</h3>
+                            </div>
+                        </div>
+                      </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="col-md-12 paginacion">
+                <paging page="vm.paginate.page" page-size="vm.paginate.limit"
+                total="vm.paginate.countTotal"
+                paging-action="vm.paging('pageClick', page, pageSize, total)"
+                hide-if-empty="true" show-prev-next="true" show-first-last="true"
+                text-title-page="Página {page}"
+                text-title-first="Primera página"
+                text-title-last="Última página"
+                text-title-next="Siguiente"
+                text-title-prev="Anterior"
+                ul-class="pagination justify-content-end"
+                li-class="page-item"></paging>
+            </div>
+        </div>
+    </div>
+</section>

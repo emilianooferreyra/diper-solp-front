@@ -1,0 +1,22 @@
+{
+  "name": "solp-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bower install && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/diper/solp-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/diper/solp-front#readme",
+  "dependencies": {
+    "angular-paging": "^2.2.2",
+    "bower": "^1.8.4",
+    "express": "^4.17.1"
+  }
+}

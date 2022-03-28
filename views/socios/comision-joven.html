@@ -1,0 +1,47 @@
+<!-- Section Slider -->
+<section class="cabecera-seccion-gral cabecera-socios">
+    <div class="row">
+        <div class="banda banda-joven">
+        </div>
+        <div class="container">
+            <div class="titulo">
+                <h2>Comisión Joven</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin Section Slider -->
+<section class="interior">
+    <div class="container">
+        <div class="row" id="breadcrumb">
+            <div class="col-md-12 tituloSeccion">
+                <h2>Comisión Joven</h2>
+            </div>
+        </div>
+                <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="nav flex-column menu-lateral">
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="comision-joven" ng-class="{active: tab == 'inicio'}">Inicio</a>
+                            </li>
+                           <!--  <li class="nav-item">
+                                <a class="nav-link" ng-href="comision-joven/quienes-somos" ng-class="{active: tab == 'quienes-somos'}">Quiénes somos</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="comision-joven/actividades" ng-class="{active: tab == 'actividades'}">Actividades</a>
+                            </li>
+                        </ul>
+                        <!-- <img class="img-fluid" src="images/novedad-1.jpg" alt=""> -->
+                    </div>
+                    <div class="col-md-9">
+                        <div ng-if="tab == 'inicio'" ng-include="'views/socios/comision-joven/inicio.html'"></div>
+                        <div ng-if="tab == 'quienes-somos'" ng-include="'views/socios/comision-joven/quienes-somos.html'"></div>
+                        <div ng-if="tab == 'actividades'" ng-include="'views/socios/comision-joven/actividades.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

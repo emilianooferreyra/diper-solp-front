@@ -1,0 +1,52 @@
+<!-- Section Cabecera -->
+<section class="cabecera-seccion-gral cabecera-institucional">
+    <div class="row">
+        <div class="cabecera-banda">
+        </div>
+        <div class="container">
+            <div class="titulo">
+                <h2>Productos Nicofer</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin Section Cabecera -->
+
+<!-- Section Contenido -->
+<section class="interior">
+    <div class="container">
+
+        <!-- Abre Titulo -->
+        <div class="row">
+            <div class="col-md-12 tituloSeccion">
+                <h2>Nuestros productos en oferta</h2>
+            </div>
+        </div>
+
+        <!-- Abre Contenido -->
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <p>Encontrá en nuestra sección de productos todas las oportunidades que te ofrece Nicofer.</p>
+            </div>
+        </div>
+
+        <!-- Abre Contenido -->
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-fluid card-img-top" ng-src="{{url + '/' + vm.info.front.source}}" alt="">
+            </div>
+            <div class="col-md-8">
+                <h3 class="card-title">{{vm.info.name}}</h3>
+                <p class="small mb-4">Código {{vm.info.code}}</p>
+                <p class="precio">{{(vm.info.price | isNumber) ? '$' : ''}} {{vm.info.price}}</p>
+
+                <p>{{vm.info.description}}</p>
+
+                <div><a class="btn btn-outline-secondary" ng-href="productos">Volver a todos los productos</a></div>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>

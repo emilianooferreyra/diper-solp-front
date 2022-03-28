@@ -1,0 +1,74 @@
+<!-- Section Slider -->
+<section id="presentacion">
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+            <!-- Slide Uno -->
+
+            <div class="carousel-item slide1 active" style="background-image: url('images/slide-1.jpg')">
+                <!-- <div class="imgSlide"></div> -->
+                <div class="carousel-caption d-md-block">
+                    <h2>Abierta la Inscripción!!</h2>
+                    <p>hasta el 26 de Abril de 2019</p>
+                </div>
+            </div>
+
+            <!-- Slide Dos -->
+            <div class="carousel-item slide2" style="background-image: url('images/slide-2.jpg')">
+                <!-- <div class="imgSlide"></div> -->
+                <div class="carousel-caption d-md-block">
+                    <h2>Co-Working</h2>
+                    <p>Tu espacio de trabajo, en SOLP</p>
+                    <a ng-href="guardia-odontologica/coworking" class="btn btn-primary">Conocelo</a>
+                </div>
+            </div>
+
+            <!-- Slide tres -->
+            <div class="carousel-item slide3" style="background-image: url('images/slide-3.jpg')">
+                <!-- <div class="imgSlide"></div> -->
+                <div class="carousel-caption d-md-block">
+                    <h2>Abierta la Inscripción!!</h2>
+                    <p>a los cursos 2019</p>
+                </div>
+            </div>
+          </div>
+
+            <a class="carousel-control-prev" data-target="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" data-target="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+  </div>
+</section>
+<!-- Fin Section Slider -->
+
+<script type="text/javascript">
+    $('.owl-carousel-slide ').owlCarousel({
+      loop: true,
+            animateOut: 'fadeOut',
+            autoplay:true,
+            autoHeight:true,
+            autoWidth:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+      })
+
+</script>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html ng-app="solp" lang="es">
+
+    <head>
+        <!-- <base href="/solp-front/"> -->
+        <base href="/">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Sociedad Odontológica de La Plata</title>
+
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+        <!-- Awesome stylesheet -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
+
+        <!-- Bootstrap v4.0.0-beta.2 stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Owl Carousel stylesheet -->
+        <link href="css/owl.carousel.min.css" rel="stylesheet">
+        <link href="css/owl.theme.default.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
+        <!-- Custom stylesheet -->
+        <link href="css/styles.css" rel="stylesheet">
+
+        <!-- Custom Responsive stylesheet -->
+        <!-- <link href="css/responsive.css" rel="stylesheet"> -->
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <link rel="stylesheet" href="bower_components/selectize/dist/css/selectize.default.css ">
+        <link rel="stylesheet" href="bower_components/ng-alertify/dist/ng-alertify.css">
+        <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css"/>
+
+        <script src="https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&render=explicit"
+            async defer></script>
+    </head>
+
+    <!-- ControllerAs syntax -->
+    <!-- Main controller with serveral data used in Inspinia theme on diferent view -->
+    <body id="inicio">
+
+        <!-- Main view  -->
+        <!--<div ng-if="logged" ng-include="'views/common/content.html'"></div>-->
+        <header-solp></header-solp>
+
+        <div ng-view></div>
+
+        <span us-spinner spinner-key="spinner"></span>
+
+        <footer-solp></footer-solp>
+
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- <script src="js/jquery/jquery-3.1.1.min.js"></script> -->
+        <script src="js/parallax.min.js"></script>
+
+        <!-- Bootstrap 4 js -->
+        <!-- <script src="js/bootstrap.min.js"></script> -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <script src="js/jquery.fancybox.min.js"></script>
+
+        <!-- Owl Carousel plugin -->
+        <script src="js/owl.carousel.min.js"></script>
+
+
+        <!-- Main Angular scripts-->
+        <script src="js/angular/angular.min.js"></script>
+        <script src="js/angular/angular-route.min.js"></script>
+
+        <script type="text/javascript" src="bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
+        <script type="text/javascript" src="js/gridify-min.js"></script>
+
+        <script src="js/plugins/angular-recaptcha.min.js"></script>
+
+        <!-- Anglar App Script -->
+        <script src="js/app.js"></script>
+        <script src="js/app.config.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/controllers/homeController.js"></script>
+        <script src="js/controllers/productController.js"></script>
+        <script src="js/controllers/classifiedController.js"></script>
+        <script src="js/controllers/articleController.js"></script>
+        <script src="js/controllers/eventController.js"></script>
+        <script src="js/controllers/facultadController.js"></script>
+        <script src="js/controllers/cursoController.js"></script>
+        <script src="js/controllers/revistaController.js"></script>
+
+        <script src="js/services/restService.js"></script>
+        <script src="js/services/solpService.js"></script>
+        <script src="js/services/autenticationService.js"></script>
+        <script src="js/services/cursosConstant.js"></script>
+        <script src="js/factories/modelFactory.js"></script>
+
+        <script src="js/directives/headerSolp.js"></script>
+        <script src="js/directives/footerSolp.js"></script>
+        <script src="js/directives/noticiasSlider.js"></script>
+        <script src="js/directives/eventosCalendar.js"></script>
+        <script src="js/directives/productosSlider.js"></script>
+        <script src="js/directives/owlCarousel.js"></script>
+        <script src="js/directives/breadcrumb.js"></script>
+        <script src="js/directives/listadoEventos.js"></script>
+        <script src="js/filters.js"></script>
+
+
+        <script src="js/angular/angular-cookies.min.js"></script>
+        <script src="js/angular/angular-messages.js"></script>
+        <script src="js/angular/angular-resource.min.js"></script>
+
+        <script src="js/plugins/middleware/angular-middleware.min.js"></script>
+
+        <script src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
+
+        <script src="js/plugins/spin/spin.min.js"></script>
+        <script src="bower_components/angular-spinner/dist/angular-spinner.min.js"></script>
+        <script src="bower_components/ng-file-upload/ng-file-upload.min.js"></script>
+
+
+        <script src="js/plugins/moment/moment.js"></script>
+        <script src="js/plugins/moment/moment-with-locales.js"></script>
+        <script src="js/plugins/moment/moment-timezone.js"></script>
+
+        <script src="node_modules/angular-paging/dist/paging.min.js"></script>
+
+        <script src="bower_components/underscore/underscore-min.js"></script>
+        <script src="bower_components/ng-alertify/dist/ng-alertify.js"></script>
+
+        <script src="bower_components/angular-jwt/dist/angular-jwt.min.js"></script>
+
+        <script type="text/javascript" src="bower_components/angular-selectize2/dist/angular-selectize.js"></script>
+
+        <script type="text/javascript" src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+        <script type="text/javascript" src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+        <script type="text/javascript" src="bower_components/fullcalendar/dist/gcal.js"></script>
+        <!-- <script type="text/javascript" src="bower_components/fullcalendar/dist/es.js"></script> -->
+
+
+        <script>
+            $(document).ready(function() {
+                moment.locale('es');
+                moment.tz.setDefault("America/Argentina/Buenos_Aires");
+            });
+
+        </script>
+    </body>
+</html>

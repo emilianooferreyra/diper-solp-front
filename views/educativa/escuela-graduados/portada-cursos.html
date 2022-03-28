@@ -1,0 +1,18 @@
+
+<h6>Cursos y Jornadas</h6>
+<h2>Programación 2019 </h2>
+
+<div class="row">
+    <!-- Curso -->
+    <div class="col-sm-6  col-md-6 col-lg-4" ng-repeat="especialidad in vm.especilidades" ng-if="especialidad.cursos.length > 0">
+        <div class="card card-curso bg-{{especialidad.class}}">
+            <img class="card-img-top" ng-src="{{especialidad.image}}" alt=""> <!-- {{especialidad.image}} -->
+            <div class="card-body">
+                <h5 class="card-title">{{especialidad.name}}</h5>
+                <p class="card-text"></p>
+                <a ng-href="escuela-graduados/cursos/{{especialidad.slug}}" class="btn-card">Más Información</a>
+            </div>
+        </div>
+    </div>
+
+</div>

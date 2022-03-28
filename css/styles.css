@@ -1,0 +1,579 @@
+
+/*
+Colores
+AZUL: #08038b;
+CELESTE: #28aee4
+Gradiente:
+*/
+
+body {font-family: 'Open Sans', sans-serif; font-weight: 400; color:#666;}
+
+.btn {border-radius: 1.25rem; text-transform: uppercase; font-size: 14px;}
+.btn + .btn {margin-left: 10px}
+.btn-continuar {text-transform: uppercase; font-size: 14px; font-weight: 300; margin-top: 0.5rem; display: inline-block;}
+.btn-outline-secondary { color:#666 !important}
+.interior .btn, .interior .btn:hover, .interior .btn i {color:#fff;}
+
+/* Tipográficos Generales */
+a, a:hover {text-decoration: none; color:#666;}
+ul, li {margin: 0; padding: 0; list-style: none;}
+h2, h3, h4 {font-weight: 300;}
+
+h3 {color: #28aee4; font-size: 1.6rem}
+h4 {color: #28aee4; font-size: 1.2rem}
+h6 {font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; line-height: 1.5em; color:#28aee4}
+p + h2, p + h3, p + h4, p + h5, ul +h3, h2 + h6 {margin-top: 2.5rem;}
+h3 + h5 {margin-bottom: 2rem;}
+
+.destacado {color: #28aee4;}
+.epigrafe {font-size: 0.9em; font-weight: 600}
+
+hr {color: #dadada;}
+
+.img-fluid-max {width: 100% !important; }
+
+/* Listas */
+.lista {padding-left: 20px; padding-bottom: 20px;}
+.lista li {list-style-image: url(../images/li.png);}
+
+.lista-borderB li {border-bottom: 1px solid #dadada; padding: 1rem 0 0}
+
+/* elementos de Form fs*/
+label {font-size: 15px; margin-bottom: 0.2em}
+
+/* ------------------ Colores y backgrounds -------------------------------- */
+
+/* Colores por áreas (para calendario) */
+.bg-institucional {background-color: : #28aee4 !important /* rgba(40,174,228,1) */; border: 0 !important;}
+.bg-facultad {background-color: #b4b042  !important /* rgba(180,176,66,1) */; border: 0 !important;}
+.bg-graduados {background-color:#5c2c75  !important /* rgba(92,44,117,1) */; border: 0 !important;}
+.bg-cultura {background-color: #d85622  !important /* rgba(216,59,34,1) */; border: 0 !important;}
+.bg-com-joven {background-color: #00b999  !important /* rgba(0,185,153,1) */; border: 0 !important;}
+.bg-com.vitalicios {background-color: #006f5f  !important /* rgba(0,111,95,1) */; border: 0 !important;}
+.bg-gremial {background-color: #a02741  !important /* rgba(160,39,65,1) */; border: 0 !important;}
+.bg-relac-inst {background-color: #f6a942  !important /* rgba(246,169,66,1) */; border: 0 !important;}
+
+
+/* Colores para Cursos de Graduados */
+.bg-cirugia {background-color: #f2c92f /* rgba(241,202,47,1) */; border: 0 !important;}
+.bg-implantologia {background-color: #93c04e /* rgba(147,192,78,1) */; border: 0 !important;}
+.bg-operatoria {background-color: #d15345 /* rgba(209,83,69,1) */; border: 0 !important;}
+.bg-periodoncia {background-color: #4f75b8 /* rgba(79,117,184,1) */; border: 0 !important;}
+.bg-ortodoncia {background-color: #ca0087 /* rgba(202,0,135,1) */; border: 0 !important;}
+.bg-protesis {background-color: #75c4f1 /* rgba(117,196,241,1) */; border: 0 !important;}
+.bg-endodoncia {background-color: #e19641 /* rgba(225,150,65,1) */; border: 0 !important;}
+.bg-salud {background-color: #9d529b /* rgba(157,52,155,1) */; border: 0 !important;}
+.bg-odontopediatria {background-color: #d999aa /* rgba(217,153,170,1) */; border: 0 !important;}
+.bg-estomatologia {background-color: #b6a400 /* rgba(182,164,0,1) */; border: 0 !important;}
+
+
+/* Varios */
+.bg-blue {background: #08038b;}
+.bg-gris {background: #3d3d3d;}
+.bg-rosa {background: #f7a4b8;}
+.bg-verdeClaro {background: #7ac244;}
+.bg-naranja {background: #f58f06;}
+
+.bg-gradient {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#28aee4+0,0275d8+100 */
+background: #28aee4; /* Old browsers */
+background: -moz-linear-gradient(left, #28aee4 0%, #0275d8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #28aee4 0%,#0275d8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #28aee4 0%,#0275d8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28aee4', endColorstr='#0275d8',GradientType=1 ); /* IE6-9 */}
+
+.bg-gradient-nicofer {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#95d3ce+0,58b8ad+75 */
+background: #95d3ce; /* Old browsers */
+background: -moz-linear-gradient(top, #95d3ce 0%, #58b8ad 75%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #95d3ce 0%,#58b8ad 75%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #95d3ce 0%,#58b8ad 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95d3ce', endColorstr='#58b8ad',GradientType=0 ); /* IE6-9 */}
+
+.txt-azul {color: #004071}
+.bg-facultad {background: rgba(178,175,76,0.8);}
+.txt-facultad {color: #b2ae4c}
+.bg-postgrado {background: rgba(90,45,117,0.8);}
+.txt-postgrado {color: #592c75}
+.txt-cultura {color: #d85622}
+
+.parallax-window {min-height: 300px; background: transparent;}
+.row-flex {display: flex; flex-wrap: wrap;}
+
+#inicio section {padding: 30px 0}
+
+/* Títulos de Secciones */
+.tituloSeccion {}
+.tituloSeccion h2 {font-size: 1.8em; border-bottom: 1px solid #dadada; padding-bottom: 0.3em; margin-bottom: 8px !important }
+.tituloSeccion:after {content:""; display: inline-block; width: 80px; height: 8px; background: #28aee4; position: relative; bottom: 19px}
+
+/* Noticias y eventos (general) */
+.fecha {letter-spacing: 1px; margin-bottom: 0; font-size: 13px;}
+.fuente {font-size: 13px; }
+.fuente span {color: #0038E0;}
+h6.categoria {font-size: 13px}
+
+/* Header */
+.navbar {padding: 0 1rem}
+.navbar-brand img {}
+.navbar-brand p {color: #484892; font-size: 0.7em; text-transform: uppercase; margin: 0.2em 0 0; font-weight: 600}
+.navbar>.container .navbar-brand{ margin-left: 0;}
+.navbar-light .navbar-nav .nav-link {color: #fff; text-transform: uppercase; text-align: center; padding: 0 1.15rem; height: 100px; line-height: 100px; font-size: 0.9rem; font-weight: 400; box-sizing: border-box;}
+.navbar-light .navbar-nav .active>.nav-link {color: #338836;}
+.dropdown-menu {border-radius: 0; border: 0; margin: 0}
+.dropdown-item {font-size: 0.9rem}
+.dropdown-toggle::after {vertical-align: .355em;}
+.navbar-light .navbar-toggler { color: rgba(255,255,255,0.9);border-color: rgba(255,255,255,.9); cursor: pointer;}
+.navbar-light .navbar-toggler:hover {background: rgba(255,255,255,0.2);}
+.navbar-light .navbar-toggler-icon {background: url(../images/nav.png) no-repeat 0 5px !important;}
+.navbar-toggler {border-radius: 0; padding: .25rem .5rem;}
+
+
+.top-bar {background: #08038b; line-height: 1rem !important; height: 42px; padding: 0; box-sizing: border-box;}
+.top-bar .container-fluid {padding: 0}
+.top-menu {float: right;}
+.top-menu li {display: inline-block;}
+.top-menu a {display: block; height: 42px; line-height: 42px; margin: 0 5px; text-transform: uppercase; color: #28aee4; font-size: 0.9rem; padding: 0 20px; font-weight: 400;}
+.top-menu a.btn-servOnline {background: #28aee4; color: #08038b; position: relative; margin: 0}
+.top-menu a.btn-servOnline::before {position: absolute; left: -22px; width: 0; height: 0; border-bottom: 42px solid #28aee4; border-left: 22px solid transparent; content: '';}
+.top-menu a.btn-servOnline i {margin-right: 5px; position: relative; top:1px;}
+.social{float: right}
+
+ul.social-share li {display: inline-block;}
+ul.social-share li a {display: inline-block; color: #28aee4; width: 25px; height: 42px; line-height: 42px; text-align: center; margin: 0 3px;}
+ul.social-share li a:hover {color: #28aee4}
+
+.carousel-item {min-height: 400px; background: no-repeat center center scroll; background-size: cover;}
+
+/* Section Presentación (imagen principal) */
+#presentacion {height: 100%; color: #fff; padding: 0 !important; }
+#presentacion .carousel-caption {position: absolute; top: 30%; z-index: 10; padding: 0; color: #fff; text-align: left;}
+#presentacion .carousel-caption h1, #presentacion .carousel-caption h2 {font-size: 2.8rem; font-weight: 600; padding: .7rem 0; line-height: 1; display: inline-block; margin-bottom: 0}
+#presentacion .carousel-caption p {font-size: 1.8rem; line-height: 1.1em; font-weight: 400;}
+#presentacion .container {display: flex; align-items: center; justify-content: left; height: 100%; position: relative; z-index: 9}
+
+/* Estilos para los textos individuales de cada slide. */
+.slide1 .carousel-caption h2 {}
+.slide1 .carousel-caption p {}
+
+.slide2 .carousel-caption h2 {color: #28aee4 !important;}
+.slide2 .carousel-caption p {color: #28aee4 !important;}
+
+.slide3 .carousel-caption h2 {font-size: 2.5rem !important;}
+.slide3 .carousel-caption p {}
+
+
+.listaItems {margin: 0; padding: 0; list-style: none;}
+.listaItems li {margin-bottom: 0.5rem}
+
+/* Carousel Novedades HOME */
+#noticias-home{background: #e9e9e9; padding-bottom: 10px !important}
+.item-car-noticias {position: relative; overflow: hidden;}
+.item-car-noticias a {color: #666}
+.item-car-noticias a:hover {color: #000}
+.item-car-noticias img {margin-bottom: 1em}
+.item-car-noticias h3 {font-weight: 400; font-size: 1.1em; line-height: 1.2em; width: 100%; transition: all .5s;}
+.item-car-noticias p {line-height: 1.3em; width: 100%; transition: all .5s; font-size: 0.9em}
+.box-imgNoticia {display: block; height: 160px; overflow: hidden; margin-bottom: 1em}
+
+.owl-carousel .owl-nav i {margin: 0; color: #fff}
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {width: 40px; height: 40px; line-height: 40px; border-radius: 20px; background: #dadada; color: #fff; padding: 0; font-size: 16px}
+
+.owl-carousel-noticias {position: relative;}
+.cierreNoticias {/*border-bottom: 1px solid #dadada;*/
+ padding: 10px 0; height: 60px; text-align: center;}
+.owl-carousel-noticias .owl-nav {position: absolute; width: 100%; top: 50%; margin-top:-20px;}
+/*.owl-carousel-noticias .owl-nav .owl-prev, .owl-nav .owl-next {float: left;}*/
+.owl-carousel-noticias .owl-nav .owl-prev,
+.owl-carousel-noticias .owl-nav .owl-next {width: 40px; height: 40px; line-height: 40px; border-radius: 20px; background: #dadada; color: #fff; padding: 0; position: absolute; font-size: 16px}
+.owl-carousel-noticias .owl-nav .owl-prev {left: -60px}
+.owl-carousel-noticias .owl-nav .owl-next {right: -60px}
+.btn-masNoticias {margin: 0 auto}
+
+
+
+/* Sección Servicios y Calendario */
+#servicios-calendario {}
+.contentBanner {position: relative;}
+.contentBanner-outline {border: 1px solid #dadada;}
+.contentBanner-outline h4 {font-weight: 700;}
+.contentBanner .ir {display:inline-block; width: 30px; height: 30px; line-height: 26px; text-align: center; color: #fff; border: 2px solid #fff; border-radius: 50%; position: absolute; right: 10px; bottom: 10px; }
+.contentBanner .ir span {display: none;}
+.contentBanner, .contentBanner h6, .contentBanner a {color: #fff; }
+.contentBanner .content-txt-banner {width: 65%; position: relative; padding: 0.8em 2em 0.8em 0.8em; height: 100%;}
+.contentBanner .content-txt-banner h3 {font-size: 1.3em; font-weight: 400}
+.banner-serv-online {background: url(../images/bg-banner-servOnline.jpg) no-repeat center bottom; background-size: auto 100%; min-height: 225px;}
+
+.contentBanner.bg-gradient h4 {color: #fff; font-weight: 700;}
+
+
+/* Sección Servicios Comunidad */
+#comunidad {}
+.banner-guardia {background: #28aee4 url(../images/bg-banner-guardia.jpg) no-repeat center bottom; background-size:100% auto; color: #fff; width: 100%;}
+.banner-guardia h3 {font-weight: 700; color: #004071;font-size: 1.6rem; line-height: 1.1em}
+.banner-guardia h3 span {text-transform: uppercase;font-weight: 300; font-size: 1.6em;}
+.banner-guardia h4 {font-size: 2em; color: #fff; margin-top: 0}
+.banner-guardia p {margin-bottom: 0; color: #004071}
+.banner-biblioteca {background: url(../images/bg-biblioteca.jpg); background-size: cover; /*height: 200px; */width: 100%; padding-top: 75px !important; position: relative; }
+.banner-segu {background: url(../images/bg-banner-segu.jpg) center; background-size: cover; /*height: 200px; */width: 100%; padding-top: 75px !important; position: relative;}
+.content-logo-biblioteca, .content-logo-segu {position: absolute; bottom: 30px; width: 100%}
+
+/* Sección Facultad, Postgrado, Ides */
+#educativas {background: #e9e9e9}
+#educativas h3 {color: #fff}
+.banner-facultad {background: url(../images/bg-banner-facultad.jpg); background-size: cover; height: 200px; }
+.banner-postgrado {background: url(../images/bg-banner-postgrado.jpg); background-size: cover; height: 200px}
+.banner-ides {border: 1px solid #005cab; background: #fff; height: 200px}
+.banner-ides h6, .banner-ides i {color: #005cab; margin: 0}
+.banner-ides img {height: 150px; width: auto;}
+.banner-ides .ir {border: 1px solid #005cab; }
+
+
+/* Sección Asociación Mutual */
+#asocMutual {color: #fff; padding: 90px 0 !important; background: url(../images/bg-mutual.jpg) no-repeat fixed; background-size: cover;}
+
+/* Banner Publicidad Nicofer */
+.banner-publicidad {padding: 1em; color: #fff; min-height: 250px; box-sizing: border-box;}
+.banner-publicidad h3 {color: #fff; font-weight: 600}
+
+/* Cuadro de datos */
+#datos {color:#fff; font-size: 1.8rem; font-weight: 300; margin-top: 3rem; text-align: center; padding: 15px 0 !important;}
+#datos li {display: inline-block; padding: 0 2rem; vertical-align: top;}
+#datos span {font-size: 0.7em;}
+#datos i {margin-right: 10px; font-size: 2rem; color:#fff; }
+#datos li.wp p {display: inline-block; margin-bottom: 0}
+#datos .wp span {display: block}
+#datos .wp span.agendanos {font-size: 1rem; color: #040480; text-align: right; line-height: 1;}
+
+/* Footer */
+footer {padding: 30px 0 0 0 ;background: #333; color:#999; font-size:13px; /*margin-top:40px;*/ }
+footer a {color:#999;}
+footer a:hover{color:#28aee4;}
+footer .logoFooter{margin-bottom:30px;}
+footer h4 {font-weight: 300; font-size: 0.8rem; text-transform: uppercase; margin-bottom:0;}
+footer h5 {font-weight: 300; font-size: 1.1rem; margin-bottom: 1.1rem;}
+.face i, .instagram i {font-size: 1.5rem; margin-right: 10px; position: relative; top: 3px;}
+.face span, .instagram span {display: none;}
+
+.data-fiscal {display: inline-block; width: 40px; height: auto;}
+.data-fiscal img {width:100%;}
+
+footer .copy{background:black; padding:10px; color:#333; font-size:11px;}
+footer .copyText {}
+footer .sm {text-align:right}
+
+
+/* Páginas interiores generales -------------------------------------------------------------------*/
+
+.breadcrumb {background: transparent; border-radius: 0; border-bottom: 1px solid #ccc; font-size: 13px; padding: 15px 0; margin-bottom: 3rem; }
+.breadcrumb-item a {color: #666 !important}
+.breadcrumb-item.active {font-weight: 700; color: #2c2c2c;}
+
+.paginacion {margin-top: 2rem}
+
+.menu-lateral a {color: #666 !important}
+.nav-link {padding: .5rem 0rem; text-transform: uppercase; font-size: 13px;}
+
+.card- {margin-bottom: 2rem; border: 0; position: relative; padding: 0 0 50px; transition: all 0s ease 0s}
+.card:hover {box-shadow: -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.5);
+	box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.5);
+	transform: translate(1px, 1px);}
+
+.content-gris {background: #e9e9e9; padding: 1em;}
+
+.col-icono {text-align: center}
+.col-icono i {font-size: 4em; color: #0eb0e6}
+
+/* Tablas */
+.table {font-size: 14px;}
+.table th {background: #484848; color: #fff; }
+.table thead th {vertical-align: top}
+.table-hover tbody tr:hover {background-color: rgb(150, 214, 235);}
+.table p {margin: 0}
+
+/* Titulos */
+.interior h2{/*margin-top: 15px;*/ margin-bottom: 1em}
+.interior h3{font-weight: 300; font-size: 1.6rem;margin-bottom: 0.8em;}
+
+/* Subtitulos */
+.interior h4{font-size: 1.2rem; margin-top: 10px; font-weight: 400;}
+.interior h5{font-size: 1rem; font-weight: 700; margin-top: 10px;}
+
+.interior a {text-decoration: none; color:#28aee4;}
+.interior a:hover {text-decoration: none; color: #0276D8;}
+
+.interior i {color:#28aee4;margin-right: 5px;}
+
+/* Cabeceras por Secciones */
+.cabecera-seccion-gral {height:260px; position: relative; background: url(../images/bg-gremials.jpg) no-repeat; background-size: cover;}
+	.banda {height: 0; width: 40%; padding-right: 20px; position: absolute; bottom: 0; left: 0; border-right: 45px solid transparent;}
+	.titulo {position: absolute; bottom: 20px; color: #fff; font-weight: 600;}
+	.titulo h2 {margin-bottom: 0}
+
+.cabecera-postgrado {background: url(../images/bg-postgrado.jpg) no-repeat; background-size: cover;}
+.cabecera-institucional {background: url(../images/bg-institucional.jpg) no-repeat center; background-size: cover;}
+.cabecera-gremial {background: url(../images/bg-gremial.jpg) no-repeat bottom center; background-size: cover;}
+.cabecera-socios {background: url(../images/bg-gremial.jpg) no-repeat bottom center; background-size: cover;}
+.cabecera-facultad {background: url(../images/banner-facultad-solp-2018.png) no-repeat left; background-size: cover;}
+.cabecera-ides {background: url(../images/banner-ides-solp-2018.jpg) no-repeat left; background-size: cover;}
+
+
+.banda-institucional {border-top: 90px solid #0eb0e6; border-left: 15px solid #0eb0e6;}
+.banda-vitalicios {border-top: 90px solid #006f5f; border-left: 15px solid #006f5f;}
+.banda-joven {border-top: 90px solid #00b999; border-left: 15px solid #00b999;}
+.banda-facultad {border-top: 90px solid #b4b042; border-left: 15px solid #b4b042;}
+.banda-graduados {border-top: 90px solid #5c2c75; border-left: 15px solid #5c2c75;}
+.banda-gremial {border-top: 90px solid #a02741; border-left: 15px solid #a02741;}
+.banda-cultura {border-top: 90px solid #d85622; border-left: 15px solid #d85622;}
+.banda-relac-inst {border-top: 90px solid #f6a942; border-left: 15px solid #f6a942;}
+
+/* Nuestras instalaciones */
+	/* Efecto Hover Imagen */
+
+.contenedor {position: relative;}
+.image { display: block; width: auto;}
+.overlay {position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: auto; width: 0;
+  opacity: 0; transition: .5s ease; background: #008CBA url(../images/solp-traslucida.png) no-repeat center;}
+
+.contenedor:hover .overlay {  opacity: 0.9; width: 100%}
+
+
+
+/* Páginas Noticias */
+.lista-noticias h2 {font-size: 1.6rem; margin-bottom: 0.5em}
+.lista-noticias h3 {color: #28aee4; font-size: 1.1rem; line-height: 1.3; margin-bottom: 1em}
+
+.box-noticia {border-bottom: 1px solid #dadada; padding-top: 1rem; padding-bottom: 2rem}
+	.box-noticia h2 {margin-bottom: 2.5rem;}
+	.box-noticia h3 {color: #28aee4; font-size: 1.2rem}
+	.box-noticia h4 {color: #28aee4;}
+	.box-noticia p + h4 {margin-top: 2rem;}
+
+/* Eventos */
+.fc-event {border-radius:0 !important; padding: 3px; font-size: 0.8em}
+.fc-day-grid-event {margin: 0 !important; padding: 3px !important}
+.fc-ltr .fc-basic-view .fc-day-number {text-align: right; font-size: 0.8em; font-weight: 700;}
+
+.lista-cada-evento {margin-bottom: 3em}
+.lista-cada-evento .fecha-evento {display:inline-block; background: #28aee4; color:#fff; padding: 1px 5px; font-size: 14px; margin-bottom: 1em}
+
+/* ------------------------ Productos ---------------------------------------------------------- */
+/* Productos Home*/
+.card-producto {position: relative; overflow: hidden;}
+.card-producto:hover {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,000000+100&0+67,0.3+100,0.3+100 */
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 1%, rgba(85,85,85,0) 67%, rgba(0,0,0,0.2) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 1%,rgba(85,85,85,0) 67%,rgba(0,0,0,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 1%,rgba(85,85,85,0) 67%,rgba(0,0,0,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#4d000000',GradientType=0 ); /* IE6-9 */}
+.card-producto h3 {font-weight: 300; line-height: 1em; font-size: 1em; color: #333; margin-bottom: 0.5em}
+.card-producto h3 a {color:#666; font-size: 15px; font-weight: 600; text-transform: uppercase; line-height: 1.2em}
+.card-producto:hover h3 a {color:#1b926c;}
+.card-producto p {font-size: 0.8em; line-height: 1.3em;}
+.card-producto .precio {color:#1b926c; font-size: 1.2em; text-align: right;}
+.card-producto .precio p {margin: 0; padding: 0 15px 5px; font-weight: 700}
+
+.card-producto .card-body {padding: 0.3em 1em; min-height: 100px;}
+.card-img-top-link {display: block; height: 200px; text-align: center;}
+.card-img-top-link img {max-height: 100%; max-width: 100%}
+
+.card-producto .card-footer {text-align: right; background-color: #1b926c; padding: 0.3em 1em;}
+.card-producto .card-footer a {color: #fff; text-transform: uppercase; font-size: 0.9em; font-weight: 400}
+.card-producto .card-footer i {margin-left: 5px; color: #fff }
+
+/* ------------------------ Clasificados ---------------------------------------------------------- */
+.carga-formClasificado {background: #f4f4f4; margin-bottom: 1em;}
+.box-infoClasificados {padding: 1em; margin-bottom: 4em}
+.box-infoClasificados h2, .box-infoClasificados p {color:#fff;}
+.box-infoClasificados h2 strong {font-weight: 700}
+.box-infoClasificados .card-header {border: 0; background: #0275d8; color: #fff}
+.box-infoClasificados .card-header:hover {background: #0052b7}
+.box-infoClasificados .card-header:first-child {border-radius: 0}
+.box-infoClasificados .btn-link {font-size: 20px; color: #fff; text-decoration: none; text-transform: none !important; cursor: pointer;}
+.box-infoClasificados .btn-link i {font-size: 30px; margin-left: 5px}
+.box-infoClasificados a {color: #08038b; font-size: 18px}
+
+.tabla-clasificados {}
+.tabla-clasificados td:first-child {font-weight: 600; text-transform: uppercase;}
+.tabla-clasificados th:last-child, .tabla-clasificados td:last-child {text-align: center}
+.tabla-clasificados i {color: #28aee4; font-size: 18px }
+
+.img-ver-clasificado {width: 100%}
+
+.detalle-clasificado {background: #e9e9e9; padding: 1em;}
+.detalle-clasificado h2 {font-size: 1.6em; font-weight: 600; margin-bottom: 1em;color: #28aee4;}
+.detalle-clasificado h5 {font-size: 0.9rem; font-weight: 700; margin:1.5em 0 0; text-transform: uppercase;}
+.detalle-clasificado .imagenes-clasificado {}
+
+
+/* Sección Institucionales ----------------------------------------------------------------------------*/
+
+  /* Autoridades */
+  .autoridades h6 {margin-bottom: 0}
+
+
+ .valores {font-size: 20px; font-weight: 300; line-height: 1.1; margin: 1em 0; text-align: center}
+ .valores:after {content: ""; width: 80px; height: 5px; display: block; margin: 0.5em auto 1em; background:#28aee4 }
+ .valores span {font-size: 24px; font-weight: 600; color: #28aee4 ;}
+
+/* Sección Socios  ------------------------------------------------------------------------------------*/
+.lista-beneficios p {margin-bottom: 0}
+.lista-beneficios li {margin-bottom: 1em}
+
+/* Sección Gremiales ------------------------------------------------------------------------------------*/
+  .tabla-convenios-prestacionales {margin-bottom: 4em}
+
+/* Sección Educativa ------------------------------------------------------------------------------------*/
+
+/* Facultad */
+.content-tabs-planes {margin-top: 3em}
+.tab-content > .tab-pane {padding-top: 2em}
+.nav-tabs li a {padding: 0.5em 1em}
+.tabla-plan-estudio {width: 100%; margin-bottom: 2em}
+
+
+  /* Escuela de Graduados */
+  .slide-info-graduados {width: 38%; height: 100%; position: absolute; left: 0; top: 0; padding: 20px; border-left: 15px solid rgba(255,255,255,0.9); border-right: 45px solid transparent; border-top: 170px solid rgba(255,255,255,0.9);}
+  .slide-info-graduados .galeria-basica {margin: 0}
+  .galeria-txt-graduado {position: absolute; top:-150px;}
+  .slide-info-txt h2 {font-size: 1.6em}
+
+  .card-curso, .card-curso-especialidad {margin-bottom: 2em}
+  .card-curso .card-title {color: #fff; font-weight: 300; margin-top: 0; font-size: 1.4em;}
+  .card-curso .card-body {padding: 1.25em 1em 2.2em}
+  .btn-card {position: absolute; bottom: 0; right: 0; background: #5c2c75; color: #fff !important; height: 36px; line-height: 36px; padding: 0 15px; cursor: pointer;}
+  .btn-card:before {position: absolute; left: -22px; width: 0; height: 0; border-bottom: 36px solid #5c2c75; border-left: 22px solid transparent; content: '';}
+  .btn-card:hover {color: #fff}
+
+  .card-curso-especialidad {color:#fff;}
+  .card-curso-especialidad .card-body{padding: 1.25em 1em 3em}
+  .card-curso-especialidad h5 {font-size: 1.4em; font-weight: 300; margin-top: 0}
+  .card-curso-especialidad p {margin-bottom: 0.2em !important}
+
+  .contentDictantes {margin-bottom: 2.5em}
+  .nombreDictante {min-height: 40px; font-size: 14px;}
+
+
+  /* SEGU */
+  .box-bannerGuardia {background: #28aee4 url(../images/bg-banner-guardia.jpg) no-repeat right bottom; background-size: auto 130%; padding: 2em; color: #fff; margin-bottom: 2em}
+  .box-bannerGuardia h2 {margin: 0 0 1em;}
+  .box-bannerGuardia h2 strong {font-weight: 700; margin: 0 0 4em;}
+  .box-bannerGuardia h3 {font-weight: 300; color:#fff;}
+  .box-bannerGuardia p {margin: 0}
+
+  .box-cronograma {margin-bottom: 2em}
+  .box-cronograma p {margin-bottom: 0}
+  .box-cronograma i {color: #28aee4; margin-right: 10px}
+
+
+  /* Revista */
+  .tapa-revista {margin-bottom: 1.5em}
+
+  .indice-art-revista li {border-bottom: 1px solid #dadada; padding: 0.8rem 0; font-size: 15px}
+  .indice-art-revista li a:nth-child(1) {color: #666}
+
+  .link-rev-ant {font-size: 14px}
+	
+
+/* Galerías de Fotos*/
+.galeria-basica {margin: 1em 0 2em}
+
+.galeria-fotos {margin: 0 -1%; font-size: 0}
+.galeria-fotos li {display: inline-block; margin: 1%; width: 23%; background: red}
+.galeria-fotos a {display: block;}
+.img-galeria {max-width: 100%; height: 100%; }
+
+/* Portadas autoadministrables ---------------------------------------------------------------------------*/
+
+.galeria-seccion img {/*height: 400px; */width: auto !important; margin: 0 auto}
+
+
+
+/* Media Queries ----------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 1230px){
+	.navbar-light .navbar-nav .nav-link {padding: 0 0.9rem;}
+	.carousel-item {/*min-height: 400px; background-position-x: 83%; background-size: 100% auto*/}
+}
+
+@media screen and (max-width: 992px){
+	.navbar-light .navbar-nav .nav-link {font-size: 1rem; height: 50px; line-height: 50px; text-align: left;}
+	.cabecera-banda {width: 45%; }
+}
+
+
+@media screen and (max-width: 768px){
+	.banner-autorizaciones, .banner-clasificados, .banner-facultad, .banner-postgrado,.banner-biblioteca {margin-bottom: 25px}
+	.banner-biblioteca, .banner-segu {height: 200px}
+	.banner-guardia {margin-bottom: 25px}
+
+	.carousel-inner {background: #08038b;}
+	.carousel-item {min-height: 400px; background: no-repeat top right scroll; background-size: 160%;}
+	#presentacion .carousel-caption {background: #08038b; top: initial; bottom: 0; left: 0; width: 100%; padding: 0 1em 0.3em; height: 100px; text-align: center;}
+	#presentacion .carousel-caption h1, #presentacion .carousel-caption h2 {font-size: 1.5em;}
+	#presentacion .carousel-caption p {font-size: 1.1em;}
+	.carousel-indicators {display: none}
+
+	.owl-carousel-noticias .owl-nav {position: static; top: 0; margin-top: 0;}
+	.owl-carousel-noticias .owl-nav .owl-prev, .owl-carousel-noticias .owl-nav .owl-next {position: static; left: 0; right: 0; background: transparent; border: 1px solid #869791; color: #869791}
+	.owl-carousel-noticias .owl-nav i {color:#869791;}
+
+	#datos .wp span.agendanos {text-align: center}
+}
+
+
+@media screen and (max-width: 570px){
+	/*.carousel-item {min-height: 400px; background-position-x: 83%;}*/
+	.carousel-item { min-height: 275px;
+    background-position: right top;
+    background-size: 180%;}
+
+	#presentacion .carousel-caption {background: #08038b; top: initial; bottom: 0; left: 0; width: 100%; padding: 0 1em 0.3em; height: 100px; }
+	#presentacion .carousel-caption h1, #presentacion .carousel-caption h2 {font-size: 1.5em;}
+	#presentacion .carousel-caption p {font-size: 1.1em;}
+	.carousel-indicators {display: none}
+
+	.owl-carousel-noticias .owl-nav {position: static; top: 0; margin-top: 0;}
+	.owl-carousel-noticias .owl-nav .owl-prev, .owl-carousel-noticias .owl-nav .owl-next {position: static; left: 0; right: 0; background: transparent; border: 1px solid #869791; color: #869791}
+	.owl-carousel-noticias .owl-nav i {color:#869791;}
+
+	#asocMutual .col-md-6 {text-align: center !important}
+
+	.cabecera-banda {width: 55%; }
+	.titulo {left: 15px; }
+
+	#datos {font-size: 1.6em; }
+	#datos span {display: block}
+	footer, footer .sm {text-align: center}
+	.menu-lateral {margin-bottom: 3em}
+
+	.interior h2, .tituloSeccion h2 {font-size: 1.6em}
+	.interior h3 {font-size: 1.4em}
+
+	.slide-info-graduados {width: 100%}
+
+	.banner-publicidad {text-align: center;}
+
+}
+
+@media screen and (max-width: 460px){
+	.cabecera-banda {width: 80%; }
+	.titulo h2 {font-size: 1.4rem }
+	.banda {width: 100%}
+	.banda-institucional {border-top: 70px solid #0eb0e6;}
+	.banda-vitalicios {border-top: 70px solid #006f5f;}
+	.banda-joven {border-top: 70px solid #00b999; }
+	.banda-facultad {border-top: 70px solid #b4b042; }
+	.banda-graduados {border-top: 70px solid #5c2c75;}
+	.banda-gremial {border-top: 70px solid #a02741;}
+	.banda-cultura {border-top: 70px solid #d85622;}
+	.banda-relac-inst {border-top: 70px solid #f6a942; }
+	.cabecera-seccion-gral {height: 182px; background-size: 150%; background-position: top}
+	.cabecera-facultad {background-position: top left}
+}
+
+@media screen and (max-width: 420px){
+	.navbar-brand img {width:220px;}
+	.top-bar {height: auto}
+	.social {text-align: center; width: 100%}
+}

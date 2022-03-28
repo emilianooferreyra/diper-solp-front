@@ -1,0 +1,65 @@
+<!-- Section Slider -->
+<section class="cabecera-seccion-gral cabecera-facultad">
+    <div class="row">
+        <div class="banda banda-facultad">
+        </div>
+        <div class="container">
+            <div class="titulo">
+                <h2>Biblioteca</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin Section Slider -->
+
+<!-- Section Noticia -->
+<section class="interior">
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-md-12 tituloSeccion">
+                <h2>Facultad</h2>
+            </div>
+        </div> -->
+        <div class="row" id="breadcrumb">
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Educativa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Biblioteca</li>
+                    </ol>
+
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="nav flex-column menu-lateral">
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="biblioteca" ng-class="{active: tab == 'inicio'}">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="biblioteca/novedades" ng-class="{active: tab == 'novedades'}">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="biblioteca/nuestras-colecciones" ng-class="{active: tab == 'nuestras-colecciones'}">Nuestras colecciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="biblioteca/consultas" ng-class="{active: tab == 'consultas'}">Consultas</a>
+                            </li>
+                        </ul>
+                        <!-- <img class="img-fluid" src="images/novedad-1.jpg" alt=""> -->
+                    </div>
+                    <div class="col-md-9">
+                        <div ng-if="tab == 'inicio'" ng-include="'views/educativa/biblioteca/inicio.html'"></div>
+                        <div ng-if="tab == 'novedades'" ng-include="'views/educativa/biblioteca/novedades.html'"></div>
+                        <div ng-if="tab == 'nuestras-colecciones'" ng-include="'views/educativa/biblioteca/nuestras-colecciones.html'"></div>
+                        <div ng-if="tab == 'consultas'" ng-include="'views/educativa/biblioteca/consultas.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

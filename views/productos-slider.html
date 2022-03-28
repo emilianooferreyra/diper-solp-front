@@ -1,0 +1,20 @@
+<data-owl-carousel class="owl-carousel owl-carousel-noticias owl-theme" data-options="ps.owlOptionsTestimonials">
+  <div owl-carousel-item="producto" ng-repeat="producto in ps.data" class="item">
+    <div class="card card-producto h-100
+    ">
+        <a class="card-img-top-link" ng-href="productos/{{producto.code}}"><img class="card-img-top" ng-src="{{url + '/' + producto.front.source}}" alt=""></a>
+        <div class="card-body">
+            <h3 class="card-title">
+                <a ng-href="productos/{{producto.code}}">{{producto.name}}</a>
+            </h3>
+            <p class="small mb-0">Código {{producto.code}}</p>
+        </div>
+        <div class="precio">
+            <p>{{(producto.price | isNumber) ? '$' : ''}} {{producto.price}}</p>
+        </div>
+        <div class="card-footer">
+            <a ng-href="productos/{{producto.code}}">Ver detalle <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+    </div>
+  </div>
+</data-owl-carousel>

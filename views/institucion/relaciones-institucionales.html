@@ -1,0 +1,54 @@
+<!-- Section Cabecera -->
+<section class="cabecera-seccion-gral cabecera-institucional">
+    <div class="row">
+        <div class="banda banda-institucional">
+        </div>
+        <div class="container">
+            <div class="titulo">
+                <h2>Institución</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin Section Cabecera -->
+
+<!-- Section Noticia -->
+<section class="interior">
+    <div class="container">
+        <div class="row" id="breadcrumb">
+            <div class="col-md-12 tituloSeccion">
+                <h2>Relaciones Institucionales</h2>
+            </div>
+        </div>
+                <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="nav flex-column menu-lateral">
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="relaciones-institucionales" ng-class="{active: tab == 'inicio'}">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="relaciones-institucionales/departamento-de-prevencion" ng-class="{active: tab == 'departamento-de-prevencion'}">Departamento de Prevención</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="relaciones-institucionales/convenio-instituciones" ng-class="{active: tab == 'convenio-instituciones'}">Convenio con Instituciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="relaciones-institucionales/distinciones" ng-class="{active: tab == 'distinciones'}">Distinciones</a>
+                            </li>
+                        </ul>
+                        <!-- <img class="img-fluid" src="images/novedad-1.jpg" alt=""> -->
+                    </div>
+                    <div class="col-md-9">
+                        <div ng-if="tab == 'inicio'" ng-include="'views/institucion/relaciones-institucionales/inicio.html'"></div>
+                        <div ng-if="tab == 'departamento-de-prevencion'" ng-include="'views/institucion/relaciones-institucionales/departamento-de-prevencion.html'"></div>
+                        <div ng-if="tab == 'convenio-instituciones'" ng-include="'views/institucion/relaciones-institucionales/convenio-instituciones.html'"></div>
+                        <div ng-if="tab == 'distinciones'" ng-include="'views/institucion/relaciones-institucionales/distinciones.html'"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

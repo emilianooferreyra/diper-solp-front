@@ -1,0 +1,96 @@
+<!-- Section Slider -->
+<section class="cabecera-seccion-gral cabecera-postgrado">
+    <div class="row">
+        <!-- SLide de textos -->
+        <div class="slide-info-graduados">
+          <data-owl-carousel ng-if="!!vm.slides" class="owl-carousel owl-theme galeria-basica galeria-txt-graduado" data-options="vm.owlCarouselOptions">
+            <div owl-carousel-item="" ng-repeat="slide in vm.slides" class="item">
+              <div class="slide-info-txt">
+                  <h2>{{slide.title}}</h2>
+                  <p ng-bind-html="vm.getHtml(slide.body)"></p>
+              </div>
+            </div>
+          </data-owl-carousel>
+        </div>
+<!-- SLide de textos -->
+        <div class="banda banda-graduados">
+        </div>
+        <div class="container">
+            <div class="titulo">
+                <h2>Escuela para Graduados</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin Section Slider -->
+
+<!-- Section Noticia -->
+<section class="interior">
+    <div class="container">
+        <div class="row" id="breadcrumb">
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Educativa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Escuela para Graduados</li>
+                    </ol>
+
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-sm-3 col-md-3 col-lg-2">
+                      <ul class="nav flex-column menu-lateral">
+                          <li class="nav-item">
+                              <a class="nav-link" ng-href="escuela-graduados" ng-class="{active: tab == 'inicio'}">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" ng-href="escuela-graduados/cursos" ng-class="{active: tab == 'cursos'}">Cursos</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" target="_blank" href="descargas/graduados/planilla.pdf" download="planilla.pdf">Planilla de Inscripción</a>
+                          </li>
+                          <li class="nav-item">
+                              <!-- <a class="nav-link" ng-href="escuela-graduados/reglamento" ng-class="{active: tab == 'reglamento'}">Reglamento</a> -->
+                              <a class="nav-link" target="_blank" href="descargas/graduados/Apartado_reglamentoEC.pdf" download="Apartado_reglamentoEC.pdf">Reglamento</a>
+
+                          </li>
+                          <!-- <li class="nav-item">
+                              <a class="nav-link" ng-href="escuela-graduados/eventos">Eventos</a>
+                          </li> -->
+                          <li class="nav-item">
+                              <a class="nav-link" ng-href="escuela-graduados/autoridades" ng-class="{active: tab == 'autoridades'}">Autoridades</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" ng-href="escuela-graduados/contacto" ng-class="{active: tab == 'contacto'}">Contacto</a>
+                          </li>
+                      </ul>
+                        <!-- <img class="img-fluid" src="images/novedad-1.jpg" alt=""> -->
+                    </div>
+                    <div class="col-sm-9 col-md-9 col-lg-10">
+                      <h6>Cursos y Jornadas - {{vm.especialidad.name}}</h6>
+                      <h2>Programación 2019 </h2>
+
+                      <div class="row">
+                          <!-- Curso -->
+                          <div class="col-sm-6  col-md-6 col-lg-4" ng-repeat="curso in vm.especialidad.cursos">
+                              <div class="card card-curso-especialidad bg-{{vm.especialidad.class}}">
+                                  <div class="card-body">
+                                      <h5>{{curso.paraweb}}</h5>
+                                      <p><strong>Docente:</strong> {{curso.nombre}}</p>
+                                      <p><strong>Fecha de inicio:</strong> {{curso.fechainicio | date:'dd/MM/yyyy'}}</p>
+                                      <a ng-href="escuela-graduados/cursos/{{vm.especialidad.slug}}/{{curso.numerodecurso}}" class="btn-card">Más Información</a>
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

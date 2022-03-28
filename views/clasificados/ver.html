@@ -1,0 +1,54 @@
+<!-- Section Contenido -->
+<section>
+    <div class="container">
+        <breadcrumb pagename="Clasificados"></breadcrumb>
+
+        <div class="row">
+            <div class="col-md-12 tituloSeccion">
+                <h2>Clasificados</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="detalle-clasificado">
+                    <h2>{{vm.info.title}}</h2>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Precio</h5>
+                            <p>{{(vm.info.price | isNumber) ? '$' : ''}} {{vm.info.price}}</p>
+                            <h5>Descripción</h5>
+                            <p>{{vm.info.description}}</p>
+                            <!-- <h5>Rubro</h5>
+                            <p>...</p> -->
+                            <h5>Fecha de creación</h5>
+                            <p>{{vm.info.createdAt | date: 'd/M/yyyy'}}</p>
+                            <h5>Fecha de publicación</h5>
+                            <p>{{vm.info.publishedAt | date: 'd/M/yyyy'}}</p>
+                            <h5>Fecha de última actualización</h5>
+                            <p>{{vm.info.updatedAt | date: 'd/M/yyyy'}}</p>
+                            <h5>Publica:</h5>
+                            <p>{{vm.info.lastname}}, {{vm.info.name}}</p>
+        <!--                     <h5>Matrícula</h5>
+                            <p>{{vm.info.matricula}}</p> -->
+                            <h5>Email</h5>
+                            <p>{{vm.info.email}}</p>
+                            <h5>Teléfono</h5>
+                            <p>{{vm.info.phone}}</p>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <!-- Galería de imágenes -->
+                            <data-owl-carousel class="owl-carousel owl-theme galeria-basica galeria-clasificado" data-options="vm.owlCarouselOptions">
+                                <div owl-carousel-item="" ng-repeat="image in vm.info.images track by image._id" class="item item-car-noticias">
+                                    <img class="img-ver-clasificado" ng-src="{{url + '/' + image.source}}" alt="{{vm.info.title}}">
+                                </div>
+                            </data-owl-carousel><!-- cierra galería -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

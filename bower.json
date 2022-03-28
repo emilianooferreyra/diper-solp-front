@@ -1,0 +1,28 @@
+{
+  "name": "solp-front",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Maximiliano Angeletti <maxi.angeletti@diper-it.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-selectize2": "^3.0.1",
+    "angular-spinner": "^1.0.1",
+    "oclazyload": "^1.1.0",
+    "underscore": "^1.8.3",
+    "ng-alertify": "^1.0.2",
+    "angular-ui-calendar": "^1.0.2",
+    "ng-file-upload": "^12.2.13",
+    "angular-jwt": "^0.1.10"
+  }
+}

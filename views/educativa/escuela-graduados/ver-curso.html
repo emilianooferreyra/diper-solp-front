@@ -1,0 +1,146 @@
+<!-- Section Slider -->
+<section class="cabecera-seccion-gral cabecera-postgrado">
+    <div class="row">
+        <!-- SLide de textos -->
+        <div class="slide-info-graduados">
+          <data-owl-carousel ng-if="!!vm.slides" class="owl-carousel owl-theme galeria-basica galeria-txt-graduado" data-options="vm.owlCarouselOptions">
+            <div owl-carousel-item="" ng-repeat="slide in vm.slides" class="item">
+              <div class="slide-info-txt">
+                  <h2>{{slide.title}}</h2>
+                  <p ng-bind-html="vm.getHtml(slide.body)"></p>
+              </div>
+            </div>
+          </data-owl-carousel>
+        </div>
+<!-- SLide de textos -->
+        <div class="banda banda-graduados">
+        </div>
+        <div class="container">
+            <div class="titulo">
+                <h2>Escuela para Graduados</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin Section Slider -->
+
+<!-- Section Noticia -->
+<section class="interior">
+    <div class="container">
+        <div class="row" id="breadcrumb">
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Educativa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Escuela para Graduados</li>
+                    </ol>
+
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-sm-3 col-md-3 col-lg-2">
+                      <ul class="nav flex-column menu-lateral">
+                          <li class="nav-item">
+                              <a class="nav-link" ng-href="escuela-graduados" ng-class="{active: tab == 'inicio'}">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" ng-href="escuela-graduados/cursos" ng-class="{active: tab == 'cursos'}">Cursos</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" target="_blank" href="descargas/graduados/planilla.pdf" download="planilla.pdf">Planilla de Inscripción</a>
+                          </li>
+                          <li class="nav-item">
+                              <!-- <a class="nav-link" ng-href="escuela-graduados/reglamento" ng-class="{active: tab == 'reglamento'}">Reglamento</a> -->
+                              <a class="nav-link" target="_blank" href="descargas/graduados/Apartado_reglamentoEC.pdf" download="Apartado_reglamentoEC.pdf">Reglamento</a>
+
+                          </li>
+                          <!-- <li class="nav-item">
+                              <a class="nav-link" ng-href="escuela-graduados/eventos">Eventos</a>
+                          </li> -->
+                          <li class="nav-item">
+                              <a class="nav-link" ng-href="escuela-graduados/autoridades" ng-class="{active: tab == 'autoridades'}">Autoridades</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" ng-href="escuela-graduados/contacto" ng-class="{active: tab == 'contacto'}">Contacto</a>
+                          </li>
+                      </ul>
+                        <!-- <img class="img-fluid" src="images/novedad-1.jpg" alt=""> -->
+                    </div>
+                    <div class="col-sm-9 col-md-9 col-lg-10">
+                      <h6>Curso</h6>
+                      <h2>{{vm.info.paraweb}}</h2>
+                      <h4>Fecha de Inicio: </h4>
+                      <!-- <p>{{vm.info.fechainicio | date:'dd/MM/yyyy'}}</p> -->
+                      <p>{{vm.info.fechadescriptiva}}</p>
+
+                      <div class="row">
+                          <!-- Detalle Curso -->
+                          <div class="col-sm-12 mb-4">
+                              <!-- <h4>Título</h4>
+                              <p>{{vm.info.titulo}}</p> -->
+
+                              <h4>Cuerpo docente:</h4>
+                              <!-- <div class="col-xs-3" ng-if="!!vm.info.dictante">
+                                <p><strong>{{vm.info.dictante.APELLIDO}}, {{vm.info.dictante.NOMBRE}}</strong><br>
+                                {{vm.info.dictante.CATEGORIA}}</p>
+                                <img ng-if="!!vm.info.dictante.FOTO" ng-src="{{vm.getImage(vm.info.dictante.FOTO)}}">
+                              </div>
+                              <div class="col-xs-3" ng-repeat="docente in vm.info.docentes">
+                                <p><strong>{{docente.APELLIDO}}, {{docente.NOMBRE}}</strong><br>
+                                {{docente.CATEGORIA}}</p>
+                                <img ng-if="!!docente.FOTO" ng-src="{{vm.getImage(docente.FOTO)}}">
+                              </div> -->
+
+                              <!-- Columnas para varios dictantes -->
+                              <div class="row">
+                                <div class="col-md-12 contentDictantes" ng-if="!!vm.info.dictantes && vm.info.dictantes.length > 0">
+                                    <div class="row">
+                                        <div class="col-sm-3 text-center" ng-repeat="dictante in vm.info.dictantes">
+                                          <p class="nombreDictante"><strong>{{dictante.APELLIDO}}, {{dictante.NOMBRE}}</strong><br>
+                                          {{dictante.CATEGORIA}}</p>
+                                          <img ng-if="!!dictante.FOTO" ng-src="{{vm.getImage(dictante.FOTO)}}">
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <!-- Columnas para varios ayudantes -->
+                              <div class="row">
+                                <div class="col-md-12 contentDictantes" ng-if="!!vm.info.docentes && vm.info.docentes.length > 0">
+                                    <div class="row">
+                                        <div class="col-sm-3" ng-repeat="docente in vm.info.docentes">
+                                          <p class="nombreDictante"><strong>{{docente.APELLIDO}}, {{docente.NOMBRE}}</strong><br>
+                                          {{docente.CATEGORIA}}</p>
+                                          <!-- <img ng-if="!!docente.FOTO" ng-src="{{vm.getImage(docente.FOTO)}}"> -->
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+
+
+                              <h4>Desarrollo: </h4>
+                              <p><strong>Fecha de inicio:</strong> {{vm.info.fechainicio | date:'dd/MM/yyyy'}}<br>
+                              <strong>Horario:</strong> {{vm.info.horariodescrip}}<br>
+                              <strong>Carga horaria total:</strong> {{vm.info.cargahoraria}} horas<br>
+                              <strong>Sesiones:</strong> {{vm.info.sesiones}}</p>
+
+                              <h4>Cantidad de cursantes: </h4>
+                              <p><strong>Mínimo:</strong> {{vm.info.mincursantes}}<br>
+                              <strong>Máximo:</strong> {{vm.info.maxcursantes}}</p>
+
+                              <h4>Objetivos generales: </h4>
+                              <p ng-bind-html="vm.getHtml(vm.info.objetivos);"></p>
+                              <h4>Metodología: </h4>
+                              <p ng-bind-html="vm.getHtml(vm.info.tematica);"></p>
+                          </div>
+                          <!-- Fin Detalle Curso -->
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

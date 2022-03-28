@@ -1,0 +1,67 @@
+<!-- Section Slider -->
+<section class="cabecera-seccion-gral cabecera-facultad">
+    <div class="row">
+        <div class="banda banda-facultad">
+        </div>
+        <div class="container">
+            <div class="titulo">
+                <h2>Guardia Odontológica</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fin Section Slider -->
+
+<!-- Section -->
+<section class="interior">
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-md-12 tituloSeccion">
+                <h2>Facultad</h2>
+            </div>
+        </div> -->
+        <div class="row" id="breadcrumb">
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Educativa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Guardia Odontológica</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="nav flex-column menu-lateral">
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="guardia-odontologica" ng-class="{active: tab == 'inicio'}">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="guardia-odontologica/segu" ng-class="{active: tab == 'segu'}">Se.Gu (Formación)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="guardia-odontologica/cronograma-de-residencia" ng-class="{active: tab == 'cronograma-de-residencia'}">Cronograma de residencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="guardia-odontologica/autoridades" ng-class="{active: tab == 'autoridades'}">Autoridades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" ng-href="guardia-odontologica/inscripciones" ng-class="{active: tab == 'inscripciones'}">Contacto e Inscripción</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9">
+                        <div ng-if="tab == 'inicio'" ng-include="'views/educativa/guardia-odontologica/inicio.html'"></div>
+                        <div ng-if="tab == 'segu'" ng-include="'views/educativa/guardia-odontologica/segu.html'"></div>
+                        <div ng-if="tab == 'autoridades'" ng-include="'views/educativa/guardia-odontologica/autoridades.html'"></div>
+                        <div ng-if="tab == 'inscripciones'" ng-include="'views/educativa/guardia-odontologica/inscripciones.html'"></div>
+                        <div ng-if="tab == 'cronograma-de-residencia'" ng-include="'views/educativa/guardia-odontologica/cronograma-de-residencia.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
